@@ -172,15 +172,34 @@ img {
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
-  margin-bottom: 25px;
   border-bottom: 2px dashed #C0C0C0;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .header-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .header-section h1 {
   margin-bottom: 20px;
+  margin-left: 200px;
+}
+@media (max-width: 500px) {
+  .header-section h1 {
+    font-size: 2.8rem;
+    margin-left: 0;
+  }
 }
 .header-section nav {
   margin-top: 5px;
+  margin-right: 200px;
+}
+@media (max-width: 500px) {
+  .header-section nav {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
 }
 .header-section nav a {
   text-decoration: none;
@@ -201,6 +220,18 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.top-section img {
+  margin-bottom: 20px;
+}
+.top-section p {
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 25px;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+  }
 }
 .home .content-section {
   margin: 30px 0;
