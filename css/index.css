@@ -171,12 +171,13 @@ img {
 .header-section {
   display: flex;
   justify-content: space-between;
+  align-content: center;
   margin-top: 25px;
-  border-bottom: 2px dashed #C0C0C0;
-  width: 100%;
+  max-width: 83%;
 }
 @media (max-width: 500px) {
   .header-section {
+    max-width: 100%;
     flex-direction: column;
     align-items: center;
   }
@@ -194,7 +195,6 @@ img {
 }
 .header-section nav {
   margin-top: 5px;
-  margin-right: 200px;
 }
 @media (max-width: 500px) {
   .header-section nav {
@@ -221,6 +221,9 @@ img {
   .header-section nav a:last-child {
     margin-right: 10px;
   }
+}
+hr {
+  margin: 0;
 }
 .footer {
   width: 100%;
@@ -344,6 +347,6 @@ img {
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 95%;
-    background-color: darkturquoise;
+    background-color: #17A2B8;
   }
 }
